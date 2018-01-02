@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', serif;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+// Центрирующий контейнер
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

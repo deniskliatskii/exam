@@ -1,0 +1,23 @@
+//Fonts
+// @import url('cюда ссылка на шрифт для импорта с Google Fonts');
+// Fontawesome
+@import "../libs/fontawesome/font-awesome";
+// Normalize
+@import "../libs/normalize/normalize";
+// Slick slider style
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+
+//  *** COMPONENTS***
+//butons
+@import "components/_buttons.scss";
+// Adjustment
+@import "./_adjustment.scss";
+
+//  *** LAYOUTS***
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+
+
+
+
