@@ -1,0 +1,5 @@
+@mixin flexCenter{                  //Flex ценрирующий на всю ширину блока
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

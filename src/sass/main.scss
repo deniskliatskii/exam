@@ -1,5 +1,5 @@
 //Fonts
-// @import url('cюда ссылка на шрифт для импорта с Google Fonts');
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:300,400,500,600');
 // Fontawesome
 @import "../libs/fontawesome/font-awesome";
 // Normalize
@@ -12,10 +12,12 @@
 //butons
 @import "components/_buttons.scss";
 // Adjustment
-@import "./_adjustment.scss";
+@import "misc/_adjustment.scss";
+@import "misc/_mixin.scss";
 
 //  *** LAYOUTS***
 @import "layouts/_header.scss";
+@import "layouts/_consulting.scss";
 @import "layouts/_footer.scss";
 
 
