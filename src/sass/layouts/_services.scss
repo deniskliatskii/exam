@@ -1,0 +1,83 @@
+.services-section {
+    padding: 183px 0 191px 0;
+    position: relative;
+}
+
+.background-services {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/gradbg.png')center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.services-name {
+    text-align: center;
+    margin: 0 0 27px 0;
+    padding: 0;
+}
+
+.services-title {
+    text-align: center;
+    margin: 0 0 105px 0;
+    padding: 0;
+}
+
+.services-card {
+    margin-bottom: 97px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 -23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list__item {
+    width: 33.3%;
+    text-align: center;
+    margin: 0 23px;
+    padding: 90px 46px 58px 51px;
+    background: #fff;
+}
+
+.services-card__icon {
+    background: url('../img/ico/seo-ico.png')center center no-repeat;
+    background-size: cover;
+    width: 84px;
+    height: 59px;
+    margin: 0 auto;
+}
+
+.arrow-right {
+    background: url('../img/ico/long-arrow-right.png') center center no-repeat;
+    // background-size: cover;
+    width: 28px;
+    height: 12px;
+    margin: 0 auto;
+    color: black;
+}
+
+.services-card__title {
+    color: #0c1423;
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 50px 0 47px 0;
+}
+
+.services-card__text {
+    margin-bottom: 50px;
+}
+.btn-services {
+    text-align: center;
+    position: relative;
+}
