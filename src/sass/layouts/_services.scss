@@ -3,6 +3,8 @@
     position: relative;
 }
 
+
+
 .background-services {
     position: absolute;
     top: 0;
@@ -47,16 +49,12 @@
 }
 
 .services-card__icon {
-    background: url('../img/ico/seo-ico.png')center center no-repeat;
-    background-size: cover;
-    width: 84px;
-    height: 59px;
+    height: 75px;
     margin: 0 auto;
 }
 
 .arrow-right {
     background: url('../img/ico/long-arrow-right.png') center center no-repeat;
-    // background-size: cover;
     width: 28px;
     height: 12px;
     margin: 0 auto;

@@ -15,12 +15,50 @@
 
 .input-wrap {
     @include flexCenter;
+    padding: 0 40px;
+}
+
+.input-mail,
+.input-phone {
+    width: 400px;
+    height: 60px;
 }
 .btn-footer {
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
     // line-height: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.06rem;
     padding: 24px 55px;
 }
+
+.input-mail::-webkit-input-placeholder {
+                font-family: 'Popins', sans-serif;
+                color: #b8b8b8;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2rem;
+            }
+
+.input-mail::-moz-placeholder {
+                color: #b8b8b8;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2rem;
+            }
+            /* Firefox 19+ */
+
+.input-mail:-moz-placeholder {
+                color: #b8b8b8;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2rem;
+            }
+            /* Firefox 18- */
+
+.input-mail:-ms-input-placeholder {
+                color: #b8b8b8;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2rem;
+            }

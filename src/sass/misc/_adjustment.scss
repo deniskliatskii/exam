@@ -29,5 +29,35 @@ a {
     color: black;
 }
 
-// font-family: 'Poppins', sans-serif;
+.defolt-title {
+    font-size: 2.5rem;
+    // line-height: 3.75rem;
+    font-weight: 600;
+    color: #0c1423;
+    padding: 0;
+    margin: 0;
+}
+
+.defolt-text {
+    opacity: 0.55;
+    color: #0c1423;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    // line-height: 2rem;
+}
+
+.name-section {
+    color: #0c1423;
+    opacity: 0.3;
+    font-size: 1.125rem;
+    font-weight: 600;
+    // line-height: 3.75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
 // font-family: 'Lato', sans-serif;

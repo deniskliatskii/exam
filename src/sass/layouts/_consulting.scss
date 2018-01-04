@@ -11,14 +11,8 @@
             max-width: 685px;
         }
 
-            .defolt-title {
-                font-size: 2.5rem;
-                line-height: 3.75rem;
-                font-weight: 600;
-                color: #0c1423;
-                padding: 0;
-                margin: 0 0 73px 0;
-            }
+            
+
             .consulting-subtitle {
                 color: #171f2e;
                 font-size: 1.25rem;
@@ -44,57 +38,23 @@
     
 }
 
-.card-list__item {
-    width: 33.3%;
-    padding: 0 42px;
-}
-.card-name {
-    color: #b8b8b8;
-    font-size: 1rem;
-    font-weight: 500;
-}
+    .card-list__item {
+        width: 33.3%;
+        padding: 0 42px;
+    }
 
-.card-title {
-    color: #171f2e;
-    font-size: 1.375rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-}
+    .card-name {
+        color: #b8b8b8;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
-.defolt-text {
-    opacity: 0.55;
-    color: #0c1423;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    line-height: 2rem;
-}
+    .card-title {
+        color: #171f2e;
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
 
-.about {
-    display: flex;
-}
-// .column-left {
-//     background: url('../img/rectangle7.png') center center no-repeat;
-//     background-size: cover;
-//     width: 840px;
-//     height: 100%;
-// }
-.column-right {
-    max-width: 606px;
-}
-.elips {
-    background-color: #979595;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-}
-
-.person-name {
-    @include flexCenter;
-}
-
-.person {
-    @include flexCenter;
-}
+    
