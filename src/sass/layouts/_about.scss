@@ -21,16 +21,19 @@
         max-width: 610px;
     }
 
-        // .elips {
-        //     background-color: #979595;
-        //     width: 60px;
-        //     height: 60px;
-        //     border-radius: 50px;
-        // }
+    .about-title {
+        margin-bottom: 65px;
+    }
 
-
-        .about-rext {
+       
+        .about-text {
             margin-bottom: 47px;
+            opacity: 0.65;
+            color: #0c1423;
+            font-family: Poppins;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2rem;
         }
         
         .sername {

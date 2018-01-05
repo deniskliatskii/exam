@@ -23,3 +23,51 @@
     font-weight: 500;
 }
 
+.dubl-btn--wrap {
+    border: 2px solid rgba(10, 10, 10, .3);
+    border-radius: 5px;
+    display: inline-block;
+
+}
+.dubl-btn {
+    color: #0c1423;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 19px 30px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.btn-right {
+    padding-left: 25px;
+    position: relative;
+        &::before {
+            content: '';
+            background: #06d56c;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: none;
+        }
+}
+
+.btn-left {
+    padding-right: 25px;
+    position: relative;
+        &::after {
+            content: '';
+            background: #06d56c;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+}
+
