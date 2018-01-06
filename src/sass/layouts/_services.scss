@@ -3,8 +3,6 @@
     position: relative;
 }
 
-
-
 .background-services {
     position: absolute;
     top: 0;
@@ -46,6 +44,17 @@
     margin: 0 23px;
     padding: 90px 46px 58px 51px;
     background: #fff;
+    transition: transform .2s linear;
+
+                
+        // &:hover {
+        //     transform: translateY(-10px);
+        // }
+
+        &:hover .arrow-right {
+            transform: translateX(100%);
+            color: #06d56c;
+        }
 }
 
 .services-card__icon {
@@ -54,7 +63,8 @@
 }
 
 .arrow-services {
-   margin: 0 auto;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 
@@ -72,7 +82,13 @@
 .services-card__text {
     margin-bottom: 50px;
 }
+
 .btn-services {
     text-align: center;
     position: relative;
+}
+
+.all-services {
+    display: none;
+    margin-top: 30px;
 }

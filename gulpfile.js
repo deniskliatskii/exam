@@ -41,7 +41,7 @@ gulp.task('sass', function () {
 
 
 //*** Сбор всех файлов JS в папке js-components в один файл ***
-gulp.task('scrips', function () {
+gulp.task('scripts', function () {
     return gulp.src('src/js/components/*.js')
     .pipe(plumber())
     .pipe(concat('main-prod.js'))
@@ -80,10 +80,10 @@ gulp.task('images', function () {
 });
 
 
-gulp.task('watch', ['browser-sync', 'sass', 'scrips', 'libsJs'], function () {
+gulp.task('watch', ['browser-sync', 'sass', 'scripts', 'libsJs'], function () {
     gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('src/js/**/*.js', browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['scripts'], browserSync.reload);
 });
 
 //*** Удаление папки dist перед загрузкой проекта ***
