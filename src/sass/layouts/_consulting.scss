@@ -9,9 +9,7 @@
 
         .consulting-title_wrap {
             max-width: 685px;
-        }
-
-            
+        }   
 
             .consulting-subtitle {
                 color: #171f2e;
@@ -29,13 +27,18 @@
                 line-height: 2.002rem;
             }
 
+/***
+*
+* CARDS
+*
+***/      
+
 .card-list {
     list-style: none;
     padding: 0;
     margin: 0 -42px;
     display: flex;
     justify-content: space-between;
-    
 }
 
     .card-list__item {

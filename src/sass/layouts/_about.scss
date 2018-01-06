@@ -2,24 +2,35 @@
     display: flex;
 }
 
-
-
 .name-about {
     margin-bottom: 47px;
 }
 
-    .column-left {
-        width: 44%;
-        margin-right: 89px;
-    }
+/***
+*
+* column-left
+*
+***/
+
+.column-left {
+    width: 44%;
+    margin-right: 89px;
+}
 
     .about-img {
         width: 100%;
     }
 
-    .column-right {
-        max-width: 610px;
-    }
+
+/***
+*
+* column-right
+*
+***/
+
+.column-right {
+    max-width: 610px;
+}
 
     .about-title {
         margin-bottom: 65px;
@@ -36,14 +47,14 @@
             line-height: 2rem;
         }
         
-        .sername {
-            color: #000000;
-            font-family: Poppins;
-            font-size: 1.125rem;
-            font-weight: 500;
-            padding: 0;
-            margin: 0;
-        }
+    .sername {
+        color: #000000;
+        font-family: Poppins;
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
 
         .autograph {
             margin-right: 97px;
@@ -53,11 +64,10 @@
             height: 65px;
         }
 
-        .person {
-            @include flexCenter;
-            margin-bottom: 76px;
-        }
-
+    .person {
+        @include flexCenter;
+        margin-bottom: 76px;
+    }
 
         .person-name {
             position: relative;

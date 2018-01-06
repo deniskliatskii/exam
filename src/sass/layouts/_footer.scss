@@ -3,62 +3,105 @@
     padding: 119px 0 103px 0;
 }
 
-.footer-title {
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 2rem;
-    color: #fff;
-    padding: 0;
-    margin: 0 0 77px 0;
-    text-align: center;
-}
+    .footer-title {
+        font-size: 2.25rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: #fff;
+        padding: 0;
+        margin: 0 0 77px 0;
+        text-align: center;
+    }
 
 .input-wrap {
     @include flexCenter;
     padding: 0 40px;
+    margin-bottom: 89px;
 }
 
-.input-mail,
-.input-phone {
-    width: 400px;
-    height: 60px;
+    .btn-footer {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 24px 55px;
+    }
+
+
+
+.footer-content {
+    @include flexCenter;
+    padding: 0 40px;
 }
-.btn-footer {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    // line-height: 2rem;
-    text-transform: uppercase;
-    padding: 24px 55px;
+
+/***
+*
+* FOOTER LEFT COLUMN
+*
+***/
+
+
+    .logo-footer {
+        margin-bottom: 24px;
+    }
+
+    .logo-footer__link {
+        color: #ffffff;
+        font-size: 1.875rem;
+        font-weight: 600;
+        line-height: 1.313rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .copyright {
+        color: #8b8b8b;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 2rem;
+        & > span {
+            color: #fff;
+        }
+    }
+
+
+/***
+*
+* FOOTER COLUMN RIGHT
+*
+***/
+
+
+.footer-column__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.input-mail::-webkit-input-placeholder {
-                font-family: 'Popins', sans-serif;
-                color: #b8b8b8;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 2rem;
-            }
+    .nav-footer__list {
+        @include flexCenter;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 31px 0;
+    }
 
-.input-mail::-moz-placeholder {
-                color: #b8b8b8;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 2rem;
-            }
-            /* Firefox 19+ */
+    .nav-footer__item {
+        margin-right: 27px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 
-.input-mail:-moz-placeholder {
-                color: #b8b8b8;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 2rem;
-            }
-            /* Firefox 18- */
+    .nav-footer__link {
+        color: #7f7f7f;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.313rem;
+        transition: color .2s ease-in-out;
+        &:hover {
+            color: #fff;
+        }
+    }
 
-.input-mail:-ms-input-placeholder {
-                color: #b8b8b8;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 2rem;
-            }
+    
