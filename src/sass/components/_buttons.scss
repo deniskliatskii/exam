@@ -1,27 +1,47 @@
-.btn {
+// Button white
+.btn-white {
     display: inline-block;
     color: #fffefe;
     font-size: 1.125rem;
     font-weight: 400;
-    padding: 15px 30px;
+    padding: 17px 30px;
+    border: 0.125rem solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+
+// Login button (green)
+
+.btn-green {
+    display: inline-block;
+    background: #06d56c;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 37px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn-white {
-    border: 2px solid #fff;
-}
-
-.btn-green {
-    background: #06d56c;
-}
+// Button gray
 
 .btn-grey {
-    border: 2px solid rgba(10, 10, 10, .3);
+    display: inline-block;
+    border: 2px solid rgba(10, 10, 10, 0.07);
     color: #0c1423;
     font-size: 1rem;
     font-weight: 500;
+    border-radius: 5px;
+    padding: 20px 30px;
 }
+
+/***
+*
+* Button Pricing
+*
+***/
 
 .dubl-btn--wrap {
     border: 2px solid rgba(10, 10, 10, .3);
@@ -71,7 +91,7 @@
         }
 }
 
-
+// Button Arrow
 .arrow-right {
     background: url('../img/ico/long-arrow-right.png') center center no-repeat;
     width: 28px;
@@ -81,6 +101,22 @@
                 color .2s ease-in-out;
 }
 
+
+// Input btn
+
+.input-btn {
+    background: none;
+    border: none;
+    background: #06d56c;
+    color: #ffffff;
+    font-family: 'Popins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    // line-height: 2rem;
+    text-transform: uppercase;
+    padding: 23px 55px;
+    border-radius: 5px;
+}
 /***
 *
 * BUTTON UP
@@ -100,29 +136,27 @@
   outline: none;
   border: none;
   transition: .8s;
-
 }
 
-.btn-up__active{
-  bottom: 50px;
-}
+    .btn-up__active{
+    bottom: 50px;
+    }
 
-.btn-up:hover{
-  border: 2px solid #06d56c;
+    .btn-up:hover{
+    border: 2px solid #06d56c;
+    }
 
-}
-
-.btn-up::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid #06d56c;
-  border-left: 3px solid#06d56c;
-  transform: rotate(45deg);
-  top: 4px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
+    .btn-up::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #06d56c;
+    border-left: 3px solid#06d56c;
+    transform: rotate(45deg);
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }

@@ -1,9 +1,14 @@
-.banner {
+.banner-section {
+   padding: 0 0 174px 0;
+}
+
+.banner-bg {
     padding: 140px 0 132px 0;
     text-align: center;
     background: url('../img/paralax-bg.jpg')center center no-repeat;
     background-size: cover;
     width: 100%;
+    position: relative;
 }
 
 .banner-heading {

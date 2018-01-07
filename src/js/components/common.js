@@ -3,6 +3,41 @@ $(document).ready(function () {
         
     // });
 
+    /*
+    *
+    * Modal Window
+    *
+    */
+
+    $('.btn-login').click(function (event) {
+        event.preventDefault();
+        $('.modalwindow').show();
+        $('.overlay-modal').show();
+        $('body').css('overflow', 'hidden');
+    })
+
+    $('.material-icons').click(function (event) {
+        event.preventDefault();
+        $('.modalwindow').hide();
+        $('.overlay-modal').hide();
+        $('body').css('overflow', '');
+    })
+
+    $(document).bind('click keydown', function (event) {
+        if (event.keyCode == 27) {
+            $('.modalwindow').hide();
+            $('.overlay-modal').hide();
+            $('body').css('overflow', '');
+        }
+    })
+
+
+    /*
+    *
+    * Scrol to section
+    *
+    */
+
     $('nav a').on('click', function (event) {
         event.preventDefault();
         var ellClick = $(this).attr('href');

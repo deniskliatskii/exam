@@ -1,10 +1,8 @@
 .about {
     display: flex;
+    padding: 0 0 183px 0;
 }
 
-.name-about {
-    margin-bottom: 47px;
-}
 
 /***
 *
@@ -32,11 +30,14 @@
     max-width: 610px;
 }
 
+    .name-about {
+        margin-bottom: 47px;
+    }
+
     .about-title {
         margin-bottom: 65px;
     }
-
-       
+      
         .about-text {
             margin-bottom: 47px;
             opacity: 0.65;
@@ -44,44 +45,42 @@
             font-family: Poppins;
             font-size: 1rem;
             font-weight: 400;
-            line-height: 2rem;
         }
         
     .sername {
         color: #000000;
-        font-family: Poppins;
         font-size: 1.125rem;
         font-weight: 500;
+        padding: 0;
+        margin: 0 0 11px 0;
+    }
+
+    .prof {
         padding: 0;
         margin: 0;
     }
 
-        .autograph {
-            margin-right: 97px;
-            background: url('../img/ico/john-landis.png') center center no-repeat;
-            background-size: cover;
-            width: 146px;
-            height: 65px;
-        }
-
-    .person {
-        @include flexCenter;
-        margin-bottom: 76px;
-    }
-
-        .person-name {
+        .person {
+            @include flexCenter;
+            margin-bottom: 76px;
             position: relative;
-            padding-left: 88px;
-            
+                padding-left: 88px;
+            &:after {
+                    content: '';
+                    background: #979595;
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50px;
+                    top: 0;
+                    left: 0;
+                }
         }
-        .person-name::after  {
-            content: '';
-            background: #979595;
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            top: 0;
-            left: 0;
-            
-        }
+          
+            .autograph {
+                margin-right: 97px;
+                background: url('../img/ico/john-landis.png') center center no-repeat;
+                background-size: cover;
+                width: 146px;
+                height: 65px;
+            }
