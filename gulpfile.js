@@ -55,6 +55,7 @@ gulp.task('libsJs', function () {
    return gulp.src([
        'src/libs/jquery/jquery-3.2.1.min.js',
        'src/libs/slick/slick.min.js',
+       'src/libs/parallax/parallax.min.js',
    ])
    .pipe(concat('libs-min.js'))
    .pipe(uglify())

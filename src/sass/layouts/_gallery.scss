@@ -1,5 +1,8 @@
 .gallery {
     padding: 0 0 206px 0;
+    @media screen and (max-width: 1400px) {
+        padding: 0 0 80px 0;
+    }
 }
 
 .gallery-list {
@@ -13,6 +16,12 @@
 
 .gallery-item {
     width: 25%;
+    @media screen and (max-width: 788px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 490px) {
+        width: 100%;
+    }
 }
 
 .gallery-img {

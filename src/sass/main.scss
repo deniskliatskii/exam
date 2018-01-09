@@ -8,16 +8,19 @@
 @import "slick/slick.scss";
 @import "slick/slick-theme.scss";
 
-//  *** COMPONENTS***
+//  *** COMPONENTS ***
+
+// Adjustment & mixin
+@import "misc/_mixin.scss";
+@import "misc/_adjustment.scss";
+
 //butons
 @import "components/_buttons.scss";
 @import "components/_inputs.scss";
 @import "components/_modalwindow.scss";
-// Adjustment
-@import "misc/_adjustment.scss";
-@import "misc/_mixin.scss";
+@import "components/_gallery-modall.scss";
 
-//  *** LAYOUTS***
+//  *** LAYOUTS ***
 @import "layouts/_header.scss";
 @import "layouts/_consulting.scss";
 @import "layouts/_services.scss";

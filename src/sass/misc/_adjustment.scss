@@ -17,12 +17,16 @@ body {
     flex-grow: 1;
 }
 
-// Центрирующий контейнер
-.container {
+/* .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-}
+}  */
+
+// Центрирующий контейнер
+.container {
+    @include container;
+} 
 
 a {
     text-decoration: none;

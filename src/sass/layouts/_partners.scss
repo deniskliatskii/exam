@@ -1,5 +1,16 @@
 .partner {
     padding-bottom: 136px;
+    @media screen and (max-width: 1400px) {
+        padding-bottom: 80px;
+    }
+    @media screen and (max-width: 1012px) {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 788px) {
+        display: none;
+    }
 }
 
 .partner-list {
@@ -10,12 +21,27 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media screen and (max-width: 1220px) {
+        margin: 0 -35px;
+    }
+    @media screen and (max-width: 1012px) {
+        margin: 0 -20px;
+        flex-wrap: wrap;
+    }
+    
 }
 
 .partner-list__item {
     width: 25%;
     height: 61px;
     margin: 0 45px;
+    @media screen and (max-width: 1220px) {
+        margin: 0 35px;
+    }
+    @media screen and (max-width: 1012px) {
+        margin: 0 20px;
+        width: 30%;
+    }
 }
 
 .partners-logo1 {

@@ -1,15 +1,56 @@
 .consulting-section {
     padding: 180px 0 156px 0;
+    @media screen and (max-width: 1400px) {
+        & {
+            padding: 100px 0 80px 0;
+        }
+    }
+        @media screen and (max-width: 788px) {
+            padding: 80px 0 60px 0;
+        }
 }
 
     .consulting-heading {
         @include flexCenter;
         margin-bottom: 148px;
+
+        @media screen and (max-width: 1400px) {
+            margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 788px) {
+            margin-bottom: 50px;
+        }
     }
 
         .consulting-title_wrap {
             max-width: 685px;
+            @media screen and (max-width: 596px) {
+                max-width: 90%;
+                margin: 0 auto;
+            }
         }   
+
+        .consulting-title {
+            margin-bottom: 73px;
+            @media screen and (max-width: 1400px) {
+                margin-bottom: 20px;
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 788px) {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            @media screen and (max-width: 596px) {
+                font-size: 1.75rem;
+                line-height: 2.5rem;
+            }
+            @media screen and (max-width: 596px) {
+            font-size: 1.7rem;
+            line-height: 2rem;
+        }
+            
+        }
 
             .consulting-subtitle {
                 color: #171f2e;
@@ -18,14 +59,29 @@
                 line-height: 3.75rem;
                 padding: 0;
                 margin: 0;
+                @media screen and (max-width: 788px) {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                @media screen and (max-width: 596px) {
+                    line-height: 1.75rem;
+                }
             }
 
+
             .count {
-                color: #f9fcfe;
-                font-size: 21.875rem;
+                font-size: 21rem;
                 font-weight: 600;
-                // line-height: 2.002rem;
-                
+                line-height: 2.002rem;
+                color: #f9fcfe;
+                @media screen and (max-width: 1400px) {
+                    font-size: 19rem;
+                    line-height: 1.8rem;
+                }
+
+                @media screen and (max-width: 1012px) {
+                    display: none;
+                }
             }
 
 /***
@@ -40,11 +96,33 @@
     margin: 0 -42px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 788px) {
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
 }
 
     .card-list__item {
         width: 33.3%;
         padding: 0 42px;
+        & > img {
+            display: block;
+            width: 78px;
+            height: 78px;
+        }
+        @media screen and (max-width: 788px) {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 40px;
+                & > img {
+                    margin: 0 auto;
+                    width: 60px;
+                    height: 60px;
+                }
+        }
     }
 
     .card-name {
@@ -53,6 +131,10 @@
         font-weight: 500;
         padding: 0;
         margin: 43px 0 17px 0;
+
+        @media screen and (max-width: 1400px) {
+            margin: 30px 0 10px 0;
+        }
     }
 
     .card-title {
@@ -61,6 +143,13 @@
         font-weight: 600;
         margin: 0 0 26px 0;
         padding: 0;
+        @media screen and (max-width: 1400px) {
+            margin: 0 0 15px 0;
+        }
+    }
+    .card-text {
+        margin-top: auto;
+        
     }
 
     

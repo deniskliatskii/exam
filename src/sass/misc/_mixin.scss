@@ -1,5 +1,28 @@
 @mixin flexCenter{                  //Flex ценрирующий на всю ширину блока
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+@mixin container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1400px) {
+  }
+  @media screen and (max-width: 1220px) {
+    width: 992px;
+  }
+  @media screen and (max-width: 1012px) {
+    width: 768px;
+  }
+  @media screen and (max-width: 788px) {
+    width: 576px;
+  }
+  @media screen and (max-width: 596px) {
+    width: 90%;
+    padding: 0 15px;
+  }
+}
+

@@ -1,6 +1,15 @@
 .about {
     display: flex;
     padding: 0 0 183px 0;
+
+    @media screen and (max-width: 1400px) {
+        padding: 0 0 100px 0;
+    }
+     @media screen and (max-width: 788px) {
+        flex-direction: column;
+        position: relative;
+        padding: 50px 0 100px 0;
+     }
 }
 
 
@@ -13,6 +22,22 @@
 .column-left {
     width: 44%;
     margin-right: 89px;
+    @media screen and (max-width: 1400px) {
+        margin-right: 50px;
+        width: 50%;
+    }
+    @media screen and (max-width: 1220px) {
+        width: 40%;
+        margin-right: 30px;
+    }
+    @media screen and (max-width: 1012px) {
+        width: 50%;
+    }
+
+     @media screen and (max-width: 788px) {
+         width: 100%;
+         margin-bottom: 40px;
+     }
 }
 
     .about-img {
@@ -28,14 +53,61 @@
 
 .column-right {
     max-width: 610px;
+    @media screen and (max-width: 1220px) {
+        max-width: 60%;
+    }
+    @media screen and (max-width: 1012px) {
+        max-width: 50%;
+        padding-right: 15px;
+    }
+     @media screen and (max-width: 788px) {
+         max-width: 90%;
+         margin: 0 auto;
+         padding: 0;
+     }
+
 }
 
     .name-about {
         margin-bottom: 47px;
+        @media screen and (max-width: 1400px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 1220px) {
+            margin-bottom: 10px;
+            line-height: 2rem;
+        }
+         @media screen and (max-width: 788px) {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+         @media screen and (max-width: 596px) {
+            font-size: 0.9rem;
+        }
     }
 
     .about-title {
         margin-bottom: 65px;
+        @media screen and (max-width: 1400px) {
+            margin-bottom: 25px;
+        }
+        @media screen and (max-width: 1220px) {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        @media screen and (max-width: 788px) {
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 2.5rem;
+        }
+        @media screen and (max-width: 596px) {
+            font-size: 1.7rem;
+            line-height: 2rem;
+        }
     }
       
         .about-text {
@@ -45,6 +117,17 @@
             font-family: Poppins;
             font-size: 1rem;
             font-weight: 400;
+            @media screen and (max-width: 1400px) {
+                margin-bottom: 25px;
+            }
+            @media screen and (max-width: 1220px) {
+                margin-bottom: 10px;
+                line-height: 1.75rem;
+            }
+             @media screen and (max-width: 788px) {
+                 text-align: center;
+                 margin-bottom: 35px;
+             }
         }
         
     .sername {
@@ -53,18 +136,24 @@
         font-weight: 500;
         padding: 0;
         margin: 0 0 11px 0;
+        @media screen and (max-width: 1012px) {
+            font-size: 0.8rem;
+        }
     }
 
     .prof {
         padding: 0;
         margin: 0;
+        @media screen and (max-width: 1012px) {
+            font-size: 0.7rem;
+        }
     }
 
         .person {
             @include flexCenter;
             margin-bottom: 76px;
             position: relative;
-                padding-left: 88px;
+            padding-left: 88px;
             &:after {
                     content: '';
                     background: #979595;
@@ -74,7 +163,19 @@
                     border-radius: 50px;
                     top: 0;
                     left: 0;
+                    @media screen and (max-width: 1400px) {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
+
+            @media screen and (max-width: 1400px) {
+                margin-bottom: 40px;
+                padding-left: 56px;
+            }
+            @media screen and (max-width: 788px) {
+                display: none;
+            }
         }
           
             .autograph {
@@ -83,4 +184,13 @@
                 background-size: cover;
                 width: 146px;
                 height: 65px;
+                @media screen and (max-width: 1012px) {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 788px) {
+                .btn-wrap {
+                    text-align: center;
+                }
             }

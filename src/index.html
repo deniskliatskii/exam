@@ -74,6 +74,14 @@
                             <a href="" class="logo-link">Frito.co</a>                        
                         </logo> <!-- ./logo -->
 
+                        <!-- responsive nav -->
+                        <input class="input__menu" type="checkbox" name="menu" id="menu">
+                        <label class="label__menu" for="menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </label>
+                        <label for="menu" class="overlay-menu"></label>
+                        <!-- ./responsive nav -->
+
                         <!-- nav -->
                         <div class="nav">
 
@@ -88,7 +96,7 @@
                             </nav> 
 
                             <!-- btn-login -->
-                            <div class="btn-wrap">
+                            <div class="btn-wrap__green">
                                 <a href="#" class="btn-green btn-login">Login</a>
                             </div> <!-- ./btn-login -->
 
@@ -117,8 +125,8 @@
         </section> <!-- ./top-section -->
 
         <!-- Consalting-section -->
-        <div class="container">
-            <section class="consulting-section">
+        <section class="consulting-section">
+            <div class="container">
                 <div class="consulting-heading">
                     <div class="consulting-title_wrap">
 
@@ -163,8 +171,8 @@
                         </li>
                     </ul>
                 </div>
-            </section> <!-- ./consalting-section -->
-        </div>
+            </div>
+        </section> <!-- ./consalting-section -->
 
         <!-- About section -->
         <section class="about" id="about">
@@ -194,7 +202,9 @@
                 </div>
 
                 <div class="btn-wrap">
-                    <a href="#" class="btn-grey">Contact Now</a>
+                    <button class="button-univers">
+                        <a href="#" class="btn btn-bord__green">Contact Now</a>
+                    </button>
                 </div>
 
             </div>
@@ -285,7 +295,9 @@
                 </div>
 
                 <div class="btn-services">
-                    <a href="#" class="btn btn-grey all-services__btn">See All Services</a>
+                    <button class="button-univers">
+                        <a href="#" class="btn btn-bord__green">See All Services</a>
+                    </button>
                 </div>
 
             </div>
@@ -293,6 +305,10 @@
 
         <!-- Gallery -->
         <section class="gallery">
+
+            
+            
+            
 
             <ul class="gallery-list">
                 <li class="gallery-item"><img class="gallery-img" src="img/gallery-1.jpg" alt="Gallery images"></li>
@@ -390,7 +406,7 @@
 
             <!-- banner -->
             <section class="banner-section">
-                <div class="banner-bg">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/paralax-bg.jpg">
                     <div class="banner-heading">Failure will never overtake me if my determination tosucceed is strong enough.
                     </div>
                     <div class="btn-wrap">
@@ -413,7 +429,7 @@
                                 <div class="news-card__firstimg"></div>
                                 <p class="news-card__name">Ruhi Sonkar.</p>
                                 <p class="news-card__text">Business depend how you make planning &amp; marketing</p>
-                                <div class="arrow-services">
+                                <div class="arrow-news arrow-services">
                                     <a href="#" class="arrow-right"></a>
                                 </div>
                             </li>
@@ -421,7 +437,7 @@
                                 <div class="news-card__secondtimg"></div>
                                 <p class="news-card__name">Ajay Kr.</p>
                                 <p class="news-card__text">Business depend how you make planning &amp; marketing</p>
-                                <div class="arrow-services">
+                                <div class="arrow-news arrow-services">
                                     <a href="#" class="arrow-right"></a>
                                 </div>
                             </li>
@@ -429,7 +445,7 @@
                                 <div class="news-card__thruimg"></div>
                                 <p class="news-card__name">Rohan.</p>
                                 <p class="news-card__text">Business depend how you make planning &amp; marketing</p>
-                                <div class="arrow-services">
+                                <div class="arrow-news arrow-services">
                                     <a href="#" class="arrow-right"></a>
                                 </div>
                             </li>
@@ -557,6 +573,32 @@
         
     </div>
     <!-- /.modal window Registration -->
+    <div class="gallery__modal-window gallery-slider">
+        <div>
+            <img src="img/gallery-1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-4.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-5.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-6.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-7.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/gallery-8.jpg" alt="">
+        </div>
+    </div>
     
 </body>
 </html>
