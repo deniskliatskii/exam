@@ -90,6 +90,7 @@
             .price-list__item {
                 max-width: 310px;
                 padding: 51px 63px;
+                margin-right: 34px;
                 text-align: center;
                 border-radius: 5px;
                 border: 1px solid rgba(38, 38, 47, .09);    
@@ -101,8 +102,8 @@
                 }
                 @media screen and (max-width: 1220px) {
                     padding: 40px 50px;
-                    max-width: 250px;
-                    margin-right: 80px;
+                    max-width: 300px;
+                    margin-right: 40px;
                 }
                 @media screen and (max-width: 788px) {
                     margin-right: 30px;
@@ -175,3 +176,6 @@
                 line-height: 2.375rem;
                 text-transform: uppercase;
             }
+
+
+            

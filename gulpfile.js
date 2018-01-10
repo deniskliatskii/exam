@@ -56,6 +56,7 @@ gulp.task('libsJs', function () {
        'src/libs/jquery/jquery-3.2.1.min.js',
        'src/libs/slick/slick.min.js',
        'src/libs/parallax/parallax.min.js',
+       'src/libs/magnific-popup/magnific-popup.js',
    ])
    .pipe(concat('libs-min.js'))
    .pipe(uglify())

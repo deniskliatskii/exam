@@ -3,33 +3,19 @@ $(document).ready(function () {
         
     // });
 
+    
     /*
     *
-    * Modal Window
+    * Header drop down
     *
     */
 
-    $('.btn-login').click(function (event) {
-        event.preventDefault();
-        $('.modalwindow').show();
-        $('.overlay-modal').show();
-        $('body').css('overflow', 'hidden');
-    })
-
-    $('.material-icons').click(function (event) {
-        event.preventDefault();
-        $('.modalwindow').hide();
-        $('.overlay-modal').hide();
-        $('body').css('overflow', '');
-    })
-
-    $(document).bind('click keydown', function (event) {
-        if (event.keyCode == 27) {
-            $('.modalwindow').hide();
-            $('.overlay-modal').hide();
-            $('body').css('overflow', '');
-        }
-    })
+    $(document).scroll(function () {
+        if (($(document).scrollTop() > 800) & ($(document).width() > 800)) {
+            $('.main-header').addClass('header_fixed');
+        } else
+            $('.main-header').removeClass('header_fixed');
+    });
 
 
     /*
@@ -45,6 +31,7 @@ $(document).ready(function () {
         $('html, body').animate(
             { 'scrollTop': distScroll }, 1500);
     })
+    
 
     /*
     *
@@ -76,7 +63,46 @@ $(document).ready(function () {
             $('.btn-up').removeClass('btn-up__active');
         }
     })
-
+ 
 
 });
 
+/*
+    *
+    * Modal Window
+    *
+    */
+
+    // $('.btn-login').click(function (event) {
+    //     event.preventDefault();
+    //     $('.modalwindow').show();
+    //     $('.overlay-modal').show();
+    //     $('body').css('overflow', 'hidden');
+    // })
+
+    // $('.material-icons').click(function (event) {
+    //     event.preventDefault();
+    //     $('.modalwindow').hide();
+    //     $('.overlay-modal').hide();
+    //     $('body').css('overflow', '');
+    // })
+
+    // $(document).bind('click keydown', function (event) {
+    //     if (event.keyCode == 27) {
+    //         $('.modalwindow').hide();
+    //         $('.overlay-modal').hide();
+    //         $('body').css('overflow', '');
+    //     }
+    // })
+
+
+/*
+*
+* Price show
+*
+*/
+
+// $('.price-show').not(':first').hide();
+// $('.switch .switch-input').click(function () {
+//     $('.price-show').fadeToggle(300);
+// });

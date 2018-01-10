@@ -72,8 +72,10 @@
                 }        
                 &:hover .arrow-right {
                     transform: translateX(100%);
-                    color: #06d56c;
                 }
+                    &:hover .fa-long-arrow-right {
+                        color: #06d56c;
+                    }
             @media screen and (max-width: 1012px) {
                 padding: 70px 30px 48px 30px;
             }
