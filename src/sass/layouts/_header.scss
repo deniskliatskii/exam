@@ -161,14 +161,7 @@
                 
 
         //  *** Main-header ***
-    .header_fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(39, 39, 39, 0.5);
-        padding: 25px 40px;
-    }
+    
         
 
         .main-header {
@@ -179,6 +172,17 @@
             @media screen and (max-width: 788px) {
                 padding-bottom: 5px;
             }
+        }
+
+        .header_fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid rgba(6, 213, 109, 0.575);
+            background-color: rgba(39, 39, 39, 0.5);
+            padding: 25px 40px;
+            transition: all .2s ease-in-out;
         }
 
             .nav {

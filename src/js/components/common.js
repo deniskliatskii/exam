@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
     // $('.your').slick({
         
     // });
@@ -11,7 +11,7 @@ $(document).ready(function () {
     */
 
     $(document).scroll(function () {
-        if (($(document).scrollTop() > 800) & ($(document).width() > 800)) {
+        if (($(document).scrollTop() > 400) & ($(document).width() > 800)) {
             $('.main-header').addClass('header_fixed');
         } else
             $('.main-header').removeClass('header_fixed');
